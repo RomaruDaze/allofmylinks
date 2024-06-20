@@ -1,14 +1,16 @@
 body {
     padding-top: 50px;
-    background-color: #f8f9fa; 
-    background-color: #000; 
+    background-color: #f8f9fa;
+    /* fallback */
+    background-color: #000;
+    /* fallback */
 }
 
 .border {
-    border: 2px solid #009f10; 
-    margin: 40px 20px; 
-    padding: 10px 20px; 
-    border-radius: 20px; 
+    border: 2px solid #009f10;
+    margin: 40px 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 .text-center {
@@ -21,8 +23,7 @@ body {
 .social-list {
     list-style-type: none;
     padding: 0;
-    text-align: left; 
-    
+    text-align: left;
 }
 
 .social-list li {
@@ -49,19 +50,35 @@ body {
 
 .copy_email {
     padding-top: 2cm;
+    /* Adjust this as needed */
 }
 
-.copy_email p{
+.copy_email p {
     font-size: 10pt;
     color: rgb(154, 154, 154);
     padding: 0;
 }
 
-.copy_email a{
+.copy_email a {
     font-size: 20pt;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-list li a {
+        font-size: 12pt;
+        padding: 8px 16px;
+    }
 
-.form-group label{
-    color: #009f10;
+    .text-center {
+        font-size: 30pt;
+    }
+
+    .copy_email {
+        padding-top: 1cm;
+    }
+
+    .copy_email p {
+        font-size: 8pt;
+    }
 }
