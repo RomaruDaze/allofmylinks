@@ -42,21 +42,25 @@ body {
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Initial shadow */
 }
 
 .social-list li a:hover {
     background-color: #007bff;
     color: #fff;
     transform: translateY(-5px);
-    /* Move up slightly */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Larger shadow */
+
+}
+
+.social-list li a:hover .icon-twitter path,
+.social-list li a:hover .icon-qiita path,
+.social-list li a:hover .icon-github path,
+.social-list li a:hover .icon-instagram path {
+    fill: #fff;
 }
 
 .copy_email {
     padding-top: 2cm;
-    /* Adjust this as needed */
 }
 
 .copy_email p {
