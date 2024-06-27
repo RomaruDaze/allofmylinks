@@ -1,9 +1,7 @@
 body {
     padding-top: 50px;
     background-color: #f8f9fa;
-    /* fallback */
-    background-color: #000;
-    /* fallback */
+    background-color: #f1f1f1;
 }
 
 .border {
@@ -11,6 +9,8 @@ body {
     margin: 40px 20px;
     padding: 10px 20px;
     border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow */
 }
 
 .text-center {
@@ -41,11 +41,17 @@ body {
     font-size: 15pt;
     width: 100%;
     box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Initial shadow */
 }
 
 .social-list li a:hover {
     background-color: #007bff;
     color: #fff;
+    transform: translateY(-5px);
+    /* Move up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Larger shadow */
 }
 
 .copy_email {
@@ -63,7 +69,6 @@ body {
     font-size: 20pt;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .social-list li a {
         font-size: 12pt;
