@@ -1,16 +1,28 @@
 body {
-    padding-top: 50px;
-    background-color: #f8f9fa;
-    background-color: #f1f1f1;
+    background-image: url('assets/background.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .border {
+    background-color: #f1f1f1;
     border: 2px solid #009f10;
     margin: 40px 20px;
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Added shadow */
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-center {
